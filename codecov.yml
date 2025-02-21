@@ -10,4 +10,5 @@ coverage:
           - unit
         paths: 
           - "src"
+        only_pulls: true  # Ensure PRs get status updates
      
