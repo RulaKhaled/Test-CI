@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="16" failures="1" errors="0" time="0.893">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-02-21T13:58:16" time="0.671" tests="2">
+    <testcase classname="words.test.js" name=" returns the given array reversed" time="0.002">
+    </testcase>
+    <testcase classname="words.test.js" name=" returns + 3 of whatever you give it" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-02-21T13:58:16" time="0.678" tests="2">
+    <testcase classname="folder/subfolder/words.test.js" name=" returns the given array reversed" time="0.001">
+    </testcase>
+    <testcase classname="folder/subfolder/words.test.js" name=" returns + 3 of whatever you give it" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-02-21T13:58:16" time="0.68" tests="5">
+    <testcase classname="folder/subfolder/mafs.test.js" name=" adds 1 + 2 to equal 3" time="0.001">
+    </testcase>
+    <testcase classname="folder/subfolder/mafs.test.js" name=" subtracts 4 - 1 to equal 3" time="0.001">
+    </testcase>
+    <testcase classname="folder/subfolder/mafs.test.js" name=" multiplies 5 * 6 to equal 30" time="0">
+    </testcase>
+    <testcase classname="folder/subfolder/mafs.test.js" name=" divides 6 / 0 to equal 0" time="0">
+    </testcase>
+    <testcase classname="folder/subfolder/mafs.test.js" name=" divides 8 / 2 to equal 3" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-02-21T13:58:16" time="0.679" tests="2">
+    <testcase classname="folder/words.test.js" name=" returns the given array reversed" time="0.002">
+    </testcase>
+    <testcase classname="folder/words.test.js" name=" returns + 3 of whatever you give it" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-02-21T13:58:16" time="0.685" tests="1">
+    <testcase classname="flag1/mafs.test.js" name=" adds 1 + 2 to equal 3" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2025-02-21T13:58:16" time="0.695" tests="4">
+    <testcase classname="flag2/words.test.js" name=" returns the given array reversed" time="0.002">
+    </testcase>
+    <testcase classname="flag2/words.test.js" name=" returns + 3 of whatever you give it" time="0">
+    </testcase>
+    <testcase classname="flag2/words.test.js" name=" returns + 3 of whatever you give it" time="0">
+    </testcase>
+    <testcase classname="flag2/words.test.js" name=" returns + 3 of whatever you give it" time="0.001">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 9
+Received: 8
+    at Object.toBe (/Users/rula/Desktop/Test-CI/flag2/words.test.js:16:26)
+    at Promise.then.completed (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/utils.js:259:10)
+    at _callCircusTest (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/run.js:209:3)
+    at _runTestsForDescribeBlock (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/run.js:97:9)
+    at run (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/run.js:31:3)
+    at runAndTransformResultsToJestFormat (/opt/homebrew/lib/node_modules/jest/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:136:21)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
