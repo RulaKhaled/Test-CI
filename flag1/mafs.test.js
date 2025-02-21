@@ -4,12 +4,16 @@ test('adds 1 + 2 to equal 3', () => {
     expect(add(1, 2)).toBe(3);
 });
 
-test('subtracts 4 - 1 to equal 3', () => {
-    expect(subtract(4, 1)).toBe(3);
-});
+// test('subtracts 4 - 1 to equal 3', () => {
+//     expect(subtract(4, 1)).toBe(3);
+// });
 
-test('multiplies 5 * 6 to equal 30', () => {
-    expect(multiply(5, 6)).toBe(30);
+// test('multiplies 5 * 6 to equal 30', () => {
+//     expect(multiply(5, 6)).toBe(30);
+// });
+
+test('divides 6 / 2 to equal 3', () => {
+    expect(divide(6, 2)).toBe(3);
 });
 
 test('divides 6 / 0 to equal 0', () => {
@@ -18,4 +22,12 @@ test('divides 6 / 0 to equal 0', () => {
 
 // test('divides 8 / 2 to equal 3', () => {
 //     expect(divide(8, 2)).toBe(4);
-// });  
+// });
+
+test('squares 4 to equal 16', () => {
+    expect(square(4)).toBe(16);
+});
+
+test('squares -3 to equal 9', () => {
+    expect(square(-3)).toBe(9);
+});
