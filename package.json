@@ -24,13 +24,6 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageDirectory": "./coverage/",
-    "reporters": [
-      "default",
-      "jest-junit"
-    ]
-  },
-  "devDependencies": {
-    "jest-junit": "^16.0.0"
+    "coverageDirectory": "./coverage/"
   }
 }
