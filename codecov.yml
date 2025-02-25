@@ -1,9 +1,12 @@
-flags:
-  testOneNew:
-    paths: #note, accepts globs, not regexes
-      - flag1/mafs.js
-    carryforward: false
-  testTwoNew:
-    paths:
-      - flag2/mafs.js
-    carryforward: false
+coverage:
+  status:
+    project:
+      default:   # default is the status check's name, not default settings
+        target: auto 
+        threshold: 5
+        base: auto 
+        flags: 
+          - unit
+        paths: 
+          - "src"
+     
