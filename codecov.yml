@@ -1,13 +1,18 @@
+codecov:
+  require_ci_to_pass: true
+
+ai_pr_review:
+  enabled: false
 
 coverage:
+  precision: 2
+  round: down
+  range: '90...100'
+
   status:
-    project:
-      default:   # default is the status check's name, not default settings
-        target: auto 
-        threshold: 5
-        base: auto 
-        flags: 
-          - unit
-        paths: 
-          - "src"
-     
+    project: yes
+    patch: true
+    changes: false
+
+github_checks:
+  annotations: false

@@ -31,14 +31,29 @@ jobs:
       - name: Run tests with coverage
         run: npm test -- --coverage 
 
+  codecov-startup:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
         with:
             token: ${{ secrets.CODECOV_TOKEN }}
             slug: RulaKhaled/Test-CI
-    
+            fail_ci_if_error: true # This will make the workflow fail if Codecov upload fails
+            verbose: true # This will provide more detailed output
+
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1
         with:
             token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Codecov Status Check
+        uses: codecov/codecov-action@v5
+        with:
+            token: ${{ secrets.CODECOV_TOKEN }}
+            flags: unittests
+            name: codecov-status
+            fail_ci_if_error: true
+            verbose: true
